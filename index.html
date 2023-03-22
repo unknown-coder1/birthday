@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday To You</title>
+    <script src="https://kit.fontawesome.com/323fb6f098.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Password page --------------------->
+    <div id="passPage" class="container">
+        <div class="login">
+           <h1>Welcome!</h1> 
+           <p>Password ko lagi sai either use logic or ask me</p>
+           <input type="text" id="name" placeholder="Enter your name"> <br><br>
+           <input id="pass" type="password" placeholder="Enter your password"> <br><br>
+           <button class="btn btn-lg btn-outline-dark">Submit</button>
+        </div>
+    </div>
+
+    <!-- Home page --------------->
+    <div id="homePage" class="home">
+
+        <!-- Intro page -------------->
+        <div id="content">
+            <div class="content-container">
+                <button class="back-btn btn btn-lg btn-warning" id="backToPass"><i class="fa-solid fa-arrow-left fa-beat-fade" style="color: #252628;"></i></button>
+                <h1 id="greet"></h1>
+                <h2>First of all 🥳🥳 <u> <span class="highlight"> Happiest Birthday to you</span></u>🥳🥳</h2>
+                <p>This is a simple website created for you. I hope you will enjoy and love it </p>
+                <p>For the further process and much more enjoyment you may click the button below and proceed. Kindly wear earphones <i class="fa-solid fa-headphones"></i> for best experience. </p>
+                <button id="audioButton" class="btn btn-lg btn-primary"><i class="fa-regular fa-circle-play fa-bounce fa-lg"></i></button>
+            </div>
+            
+            
+        </div>
+        <!-- song page -->
+        <div id="songPage">
+            <img class="bd-img" src="images/bg.jpg" alt="" height="200px" width="200px"> <br> <br>
+            <h2>Enjoy The Video</h2>
+            <video class="bd-vid" width="320" height="240" controls id="mainvideo">
+                <source src="videos\mainvideo.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video><br><br>
+              <button class="btn btn-lg btn-primary" onclick="play()"><i class="fa-regular fa-circle-play fa-bounce fa-lg"></i></button>
+              <p>If the video is completed then only press the button below and go to the next page</p>
+            <button id="nextPage" class="btn btn-lg btn-dark"><i class="fa-solid fa-circle-right fa-beat-fade"></i></button>
+        </div>
+        <div id="wish">
+            <div class="wish-container">
+                <div id="light-container">
+                    <div class="lights"><img src="images\light.png" alt="" height="300px"></div>
+                    <div class="lights"><img src="images\light.png" alt="" height="300px"></div>
+                </div>
+                <div id="age-container">
+                    <div class="age">1</div>
+                    <div class="age">8</div>
+                </div>
+                <div class="abcd">
+                    <p>Make a wish and blow the candles and then press the next button</p>
+                    <button id="blowbutton" class="btn btn-lg btn-danger">Blow</button> <br> <br>
+                    <button id="wishbutton" class="btn btn-lg btn-dark"><i class="fa-solid fa-circle-right fa-beat-fade"></i></button>
+                    <p>next button</p>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Gift page --------------->
+        <div id="giftfromme">
+            <h1>You have complete your wish</h1>
+            <h1>Now here is a small gift 🎁🎁🎁 from me</h1>
+            <p>Press the button below to go to gift section and claim your gifts</p>
+            <button id="giftfrommebutton" class="btn btn-lg btn-dark"><i class="fa-solid fa-circle-right fa-beat-fade"></i></button>
+        </div>
+
+
+        <div id="gift-container">
+            <button class="back-btn btn btn-lg btn-warning" id="backToIntro"><i class="fa-solid fa-arrow-left fa-beat-fade" style="color: #252628;"></i></button>
+            <div id="carouselExampleIndicators" class="carousel slide">
+                
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h2> Here is your first gift</h2>
+                        <button id="openButton" class="btn btn-lg btn-primary">OPEN</button>
+                        <button id="closeButton" class="btn btn-lg btn-outline-dark">CLOSE</button>
+                        <div class="hearts-container">
+                            <li class="heart">💛</li>
+                            <li class="heart">💙</li>
+                            <li class="heart">💛</li>
+                            <li class="heart">💙</li>
+                            <li class="heart">💛</li>
+                            <li class="heart">💙</li>
+                            <li class="heart">💛</li>
+                        </div>
+                        <div class="gift-top-container">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li class=" star center-bot-box">⭐</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </div>
+                        <div id="gift" class="gifts">
+                            <p>Press the button to Claim your gift</p>
+                            <button id="firstGiftButton" class="btn btn-md btn-danger">Claim</button>
+                        </div>
+                        <div class="gift-bottom-container">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li class="center-bot-box">❣️</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </div>
+                        <div class="des">
+                            <i class="fa-solid fa-arrow-right"></i>More...
+                        </div>
+                        
+                    </div>
+                    <div class="carousel-item">
+                        <h2> Here is your next gift</h2>
+                        <button id="openButton2" class="btn btn-lg btn-primary">OPEN</button>
+                        <button id="closeButton2" class="btn btn-lg btn-outline-dark">CLOSE</button>
+                        <div class="hearts-container">
+                            <li class="heart">💛</li>
+                            <li class="heart">💙</li>
+                            <li class="heart">💛</li>
+                            <li class="heart">💙</li>
+                            <li class="heart">💛</li>
+                            <li class="heart">💙</li>
+                            <li class="heart">💛</li>
+                        </div>
+                        <div class="gift-top-container">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li class=" star center-bot-box">⭐</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </div>
+                        <div id="gift2" class="gifts">
+                            <p>Press the button to Claim your gift</p>
+                            <button id="secondGiftButton" class="btn btn-md btn-danger">Claim</button>
+                        </div>
+                        <div class="gift-bottom-container">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li class="center-bot-box">❣️</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </div>
+                        <div class="des">
+                            <i class="fa-solid fa-arrow-right"></i>More...
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <h2> This is the last one</h2>
+                        <button id="openButton3" class="btn btn-lg btn-primary">OPEN</button>
+                        <button id="closeButton3" class="btn btn-lg btn-outline-dark">CLOSE</button>
+                        <div class="hearts-container">
+                            <li class="heart">💛</li>
+                            <li class="heart">💙</li>
+                            <li class="heart">💛</li>
+                            <li class="heart">💙</li>
+                            <li class="heart">💛</li>
+                            <li class="heart">💙</li>
+                            <li class="heart">💛</li>
+                        </div>
+                        <div class="gift-top-container">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li class=" star center-bot-box">⭐</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </div>
+                        <div id="gift3" class="gifts">
+                            <p>Press the button to Claim your gift</p>
+                            <button id="thirdGiftButton" class="btn btn-md btn-danger">Claim</button>
+                        </div>
+                        <div class="gift-bottom-container">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li class="center-bot-box">❣️</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </div>
+                        <div class="des">
+                            This is the last one please press the button below to end... <br>
+                            <button class="button btn btn-lg btn-danger"><a href="end.html">End</a></button>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>            
+
+
+
+        <!-- firstGiftContainer ----------------->
+        <div id="firstGiftContainer">
+            <h1>Here is your First Gift</h1>
+            <p> For better experience press the play button. </p>
+            <button class="btn btn-lg btn-primary" id="mainSongButton"><i class="fa-regular fa-circle-play fa-bounce fa-lg"></i></button>
+            <p>First read and then download</p>
+            <div class="chithi">
+                <h2>To my goks:</h2>
+                <p>
+                    Pailya ta <span class="hi"><strong><em>HAPPY BIRTHDAY TO YOU</em></strong></span>, may all your dreams come true and succed in your life . Ani abo ta 18 barsa ni pugis herda herda thulo ni bhayis, buro bhayis heheheh ani saddhai hasnu j panim vayom kassam tero hasda anuhar arkoi dammi hunsa fulinda ta kasto gala moto moto hehe kassam tho hasda ta abo mero ta kassam mo ni hasnu roknu sakdina ah sometimes ta tero fuleko anuhar ni kasto manparsa tara smile wala sai best... aju ta tero birthday ni ho thanks to god for giving me you. <span class="hi">Yo date 23 march 2005 ma ta suneko thia darlagdoo pani pareko thio hare......... kina vanay god  yo din bhakku ruko thio hare tho lai afu bara taro garera darthi ma dinu because you are always very special for everyone </span>. Ones again thanks to god jo lay afnu man marera tho molai dinu vayo and I appreciate it and I am very thankful to god as well as tero ama ra papa thank you unhar haru laim  ani most thank ta tolai  <span class="hi">thank you Isha for choosing </span> me mo katti  k k garsu taram mo sitai basdeko ma thank you . <span class="hi"> I am very lucky to have you as my partner not just partner but I have accepted you as my soulmate forever...</span> ah abo kai kai bela bhandam besi jastoi mo resayera k k naramro bhansu abo sorry mo control garnu heabbi try garsu ki sakdinan ta tyo ta toilay bujchas hola ni taram abo ah kai kai bela ta toilay ris uthawsas <span class="hi"> taram honestly bhannu paryo bhani you are the best girlfriend sappai best chas hw  abo heabbi bujchas molai maya ta dherai garsas moi abo sochnum sakdena hola saddhai garnu ani lah mo ni saddhai garsu </span>, resawsu k k bhansu bhanda mai feri maya gardina sai haina ni Maya sai kassam ni Isha thom sochnu sakdenas ki mo katti garsu bhanera..... Ayyuww khai k k lekhay hw moilay taram halka man ko kura bhaneko lah .. Sorry hai Isha mo abo letter haru teti lekhnu awdena ani alik lekhnu lai time ni payena bhandam arui k k bhandam dekhi ta halis k banawdai thia heheh yo website banawdai thia ramro ta chaina taram hope you like it ani enjoying it.
+                Lala Isha yeti nai ho lah. Once again Happy birthday to you aju ko din majalay bitawnu ani mero bare tention na linu I am always with you.💙I love you Isha💛 
+                <br><br><br>
+                <strong>
+                from your goks hahhaha <br> 
+                Finzo badar.</strong> 
+                <br>
+                ani kei mistake cha bhani kindly ignore hai hahaha.</p>
+            </div>
+            <button class="btn btn-md btn-outline-danger"><a href="images\TapScanner 03-22-2023-18꞉48.pdf" download>Download</a></button>
+            <p>If you read and download the file please go back for the next gift.</p>
+            <button class="btn btn-lg btn-warning" id="backToGift-1"><i class="fa-solid fa-arrow-left fa-beat-fade" style="color: #252628;"></i></button>
+        </div>
+
+        <div id="secondGiftContainer">
+            <h1>Here is your Second Gift</h1>
+            <video id="mainvid" class="bd-vid" width="320" height="240" controls>
+                <source src="videos\giftvideo.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video><br><br>
+              <button onclick="vidplay()" class="btn btn-lg btn-primary"><i class="fa-regular fa-circle-play fa-bounce fa-lg"></i></button>
+              <p>Sorry hai garnu sai ayena 😅🤣</p>
+              <p>To download press the button below ani full screen hunsa tya bara tyo tinta dot hunsa tya press gar the press download.</p>
+            <button class="btn btn-md btn-outline-danger"><a href="videos\giftvideo.mp4" download="">Download</a></button>
+            <p>Download the video please go back for the next gift.</p>
+            <button class="btn btn-lg btn-warning" id="backToGift-2"><i class="fa-solid fa-arrow-left fa-beat-fade" style="color: #252628;"></i></button>
+        </div>
+        
+        <div id="thirdGiftContainer">
+            <h1>Here is your Last Gift</h1>
+            <p> This one is just a virtual image kina vanay yo mo abo chaye panim sakdina tara chitoi insu na surta..</p>
+            <img src="images\flower.jpg" alt="" height="300px" width="300px"> <br>
+            <p>if you want to download you can download</p>
+            <button class="btn btn-md btn-outline-danger"><a href="images\flower.jpg" download="">Download</a></button>
+            <p>If you  download the file please go back.</p>
+            <button class="btn btn-lg btn-warning" id="backToGift-3"><i class="fa-solid fa-arrow-left fa-beat-fade" style="color: #252628;"></i></button>
+        </div>
+        
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

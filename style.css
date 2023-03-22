@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: -webkit-linear-gradient(45deg,#C9EEFF 50%,#AA77FF 50%);
+    height: 100vh;
+}
+.endContainer{
+    padding: 30% 10% 10% 10%;
+    background-color: rgba(0,0,0,0.4);
+    height: 100%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.login{
+   margin-top: 200px;
+   background-color: rgba(0,0,0,0.3);
+   padding: 60px;
+   border-radius:10%;
+}
+h1{
+    margin-bottom: 20px;
+    color: white;
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+input{
+    border: none;
+    background: transparent;
+    outline: none;
+    border-bottom: 2px solid grey;
+    padding-bottom: 10px;
+    color: white;
+}
+::placeholder{
+    color:white;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#content{
+    margin-top: 100px;
+    text-align: center;
+}
+.content-container{
+    width: 80%;
+    margin: auto;
+}
+#content p{
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+#content h2{
+    text-align: left;
+    margin-bottom: 50px;
+}
+.highlight{
+    background: rgb(96, 96, 231);
+}
+
+#songPage{
+    text-align: center;
+    display: none;
+}
+.bd-img{
+    border-radius: 100%;
+    background: red;
+}
+#wish{
+    text-align: center;
+    padding-bottom: 60px;
+    display: none;
+}
+#light-container{
+    display: flex;
+    width: 80%;
+    position: relative;
+    top: 30px;
+}
+
+#age-container{
+    display: flex;
+    font-size: 20rem;
+    font-weight: bolder;
+    justify-content: center;
+    position: relative;
+    bottom: 150px;
+    color: white;
+}
+.abcd{
+    position: absolute;
+    top:600px;
+}
+
+
+#giftfromme{
+    display: none;
+    text-align: center;
+    margin-top: 210px;
+}
+
+/* gift */
+#gift-container{
+    text-align: center;
+    display: none;
+    margin: 100px auto auto auto;
+}
+.gift-top-container{
+    height: 100px;
+    width: 300px;
+    background-color: #2F58CD;
+    border-radius:10px 10px 0 0;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 5px solid black;
+    margin: auto;
+}
+li{
+    list-style-type: none;
+    height: 100%;
+    width: 60px;
+}
+.gift-top-container li:nth-child(odd), .gift-bottom-container li:nth-child(odd){
+    background: #4E31AA;
+}
+.gift-top-container li:nth-child(even), .gift-bottom-container li:nth-child(even){
+    background: #2F58CD;
+}
+.gift-bottom-container{
+    height: 200px;
+    width: 300px;
+    background-color: #2F58CD;
+    border-radius:0 0 10px 10px;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 5px solid black;
+    margin: auto;
+}
+.gifts{
+    display: none;
+    background-color: rgba(0,0,0,0.4);
+    width: 40%;
+    margin: 50px auto;
+    color: white;
+}
+.hearts-container{
+    height: 50px;
+    width: 300px;
+    display: flex;
+    margin: auto;
+    margin-top: 40px;
+}
+.heart{
+    font-size: 2rem;
+    position: relative;
+    right: 7px;
+    top: 5px; 
+}
+
+
+
+
+.center-bot-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+}
+.star{
+    font-size: 2.5rem;
+}
+
+.back-btn{
+    display: flex;
+    justify-content: left;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.des{
+    font-size: 2rem;
+}
+
+
+
+/* First gift */
+#firstGiftContainer{
+    text-align: center;
+    margin-top: 20px;
+    margin: 10px auto;
+    display: none;
+    background:-webkit-linear-gradient(45deg,#C9EEFF 50%,#AA77FF 50%);
+}
+.chithi{
+    background: rgb(202, 201, 201);
+    width: 70%;
+    height: 100%;
+    border-radius: 5%;
+    line-height: 1.5;
+    margin:auto auto 10px auto;
+    padding: 20px;
+}
+.chithi p{
+    text-align: left;
+    font-weight: 500;
+}
+
+.hi{
+    background-color: pink;
+}
+
+/*Second Gift */
+#secondGiftContainer{
+    text-align: center;
+    margin: 140px auto;
+    display: none;
+    background:-webkit-linear-gradient(45deg,#C9EEFF 50%,#AA77FF 50%);
+    height: 100vh;
+}
+
+#thirdGiftContainer{
+    text-align: center;
+    margin-top: 20px;
+    margin: 10px auto;
+    display: none;
+    background:-webkit-linear-gradient(45deg,#C9EEFF 50%,#AA77FF 50%);
+}
